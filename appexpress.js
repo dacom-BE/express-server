@@ -1,4 +1,6 @@
-// app.js
+/* appexpress.js
+Test server application based on nodeJS and express
+*/
 
 var express = require('express');
 var hbs = require('hbs');
@@ -26,7 +28,7 @@ app.use((req,res,next) => {
 	next();
 })
 
-/*app.use((req,res,next) => {
+/* app.use((req,res,next) => {
 	res.render('maintenance.hbs',{
 		pageTitle:'Maintenance',
 		maintenanceText:'Application temporarily unavailable'
