@@ -2,6 +2,7 @@
 Test server application based on nodeJS and express
 */
 
+const port = process.env.PORT || 3000;
 var express = require('express');
 var hbs = require('hbs');
 var fs = require('fs');
@@ -68,6 +69,6 @@ app.get('/bad',(req,res) => {
 	})
 });
 
-app.listen(3000,() => {
-	console.log('server is running on port 3000');
+app.listen(port,() => {
+	console.log(`server is running on port ${port}`);
 });
